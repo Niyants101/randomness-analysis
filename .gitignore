@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+*.exe
+download*.pdf
+config.local.py
+.DS_Store
