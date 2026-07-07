@@ -1,4 +1,3 @@
-# randomness-analysis
 # Randomness Analysis
 
 This project compares different ways of generating random bits using Python.
@@ -37,19 +36,19 @@ These bits come from quantum random number data from the ANU Quantum Random Numb
 
 ## Statistical Tests Used
 
-This project uses three main tests:
+This project uses three main tests.
 
 ### Frequency Test
 
 This test checks whether the number of 0s and 1s are close to equal.
 
-A perfectly balanced 10,000 bit sample would have about 5,000 zeros and 5,000 ones.
+A balanced 10,000 bit sample should have about 5,000 zeros and 5,000 ones.
 
 ### Runs Test
 
 This test checks whether the sequence switches between 0s and 1s in a way that looks random.
 
-For example, a sequence with too many repeated values or too many changes may look less random.
+A sequence with too many repeated values or too many changes may be less random.
 
 ### Serial Correlation
 
@@ -61,19 +60,18 @@ A random sequence should have very little correlation between neighboring bits.
 
 ```text
 randomness-analysis/
-│
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── LICENSE
 ├── code/
 │   ├── single_trial/
 │   └── multi_trials/
-│
 ├── data/
 │   └── single_trial/
-│
 ├── results/
 │   └── multi_trials/
-│
 ├── graphs/
 │   ├── single_trial/
 │   └── multi_trials/
-│
 └── notes/
